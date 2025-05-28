@@ -1,0 +1,51 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 7vh;
+  background-color: var(--bg);
+
+  & p {
+    font-size: 1.4vw;
+    font-weight: 750;
+    font-family: Fira Code;
+    color: var(--green);
+  }
+
+  & nav {
+    display: flex;
+
+    & * {
+      font-size: 0.9vw;
+      font-weight: 600;
+      padding: 6px 11px;
+      border: 2px solid transparent;
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+    }
+
+    & .inactive:hover {
+      color: var(--green);
+    }
+
+    & .active {
+      color: var(--gray);
+      cursor:not-allowed;
+    }
+
+    & .dash {
+      background-color: var(--bg);
+      border: 2px solid var(--green);
+      border-radius: 5px;
+
+      &:hover {
+        background-color: var(--green);
+        color: #000;
+      }
+    }
+  }
+}
