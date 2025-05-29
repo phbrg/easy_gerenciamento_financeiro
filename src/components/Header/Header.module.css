@@ -49,3 +49,18 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .Header {
+    & p {
+      font-size: 2vh;
+    }
+
+    & nav {
+      & * {
+        padding:  0.5vh 3vw;
+        font-size: 1.4vh;
+      }
+    }
+  }
+}

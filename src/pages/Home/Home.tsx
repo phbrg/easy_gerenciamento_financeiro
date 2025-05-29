@@ -22,6 +22,7 @@ export default function Home() {
             A <span>Easy</span> é uma plataforma digital de gestão financeira pensada para quem quer controlar melhor seus ganhos, gastos e objetivos — <span>sem complicação</span>. Com ela, você pode registrar seus salários, despesas, datas de pagamento, fontes de renda e até suas metas financeiras.<br/><br/>A <span>Easy</span> organiza suas informações de forma clara e segura, ajudando você a visualizar onde está gastando, quando precisa pagar algo e quanto sobra no mês.<br/><br/>Além disso, a plataforma oferece dicas básicas de como economizar, investir e se planejar para o futuro — <span>tudo isso sem exigir nenhum dado pessoal</span>, sem servidor e <span>100% gratuito</span>. Seus dados ficam salvos apenas no seu dispositivo, de forma segura e encriptada.
           </p>
         </div>
+        <div className={s.line}></div>
         <div className={s.porque}>
           <h1>Por que usar a <span>Easy</span>?</h1>
           <p>

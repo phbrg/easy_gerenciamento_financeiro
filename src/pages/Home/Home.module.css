@@ -68,20 +68,27 @@
   }
 
   & .wcu {
-    height: 100vh;
+    height: 70vh;
     flex-direction: row;
+    margin: 7vh 0;
+    padding: 3vw;
     gap: 2vw;
+    background-color: var(--bg2);
+    border-radius: 20px;
+
+    & .line {
+      height: 100%;
+      width: 0.3vw;
+      border-radius: 1000px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
 
     & div {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-      gap: 2vh;
-      padding: 2vw 3vw;
-      border-radius: 20px;
-      min-height: 70%;
-      background-color: var(--bg2);
 
       & h1 {
         font-size: 3.5vw;
@@ -96,13 +103,64 @@
     }
   }
 
-  & hr {
-    background-color: red;
-    height: 100%;
-    width: 15px;
-  }
-
   & span {
     color: var(--green);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Home {
+    & .landing {
+      height: 93vh;
+      & .texts {
+        & h1 {
+          font-size: 4.5vh;
+          width: 100%;
+          text-align: center;
+        }
+        & h2 {
+          font-size: 1.8vh;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      & .buttons {
+        & .button {
+          font-size: 2vh;
+          padding: 1.2vh 5vw;
+        }
+
+        & p {
+          font-size: 1.2vh;
+        }
+      }
+    }
+
+    & .wcu {
+      margin: 3vh 0;
+      padding: 3vh;
+      height: auto;
+      flex-direction: column;
+      border-radius: 10px;
+      gap: 2vh;
+
+      & .line {
+        display: none;
+      }
+
+      & div {
+        gap: 1.5vh;
+        & h1 {
+          font-size: 3vh;
+        }
+
+        & p {
+          font-size: 1.29vh;
+          padding-left: 0.5vh;
+        }
+      }
+
+    }
   }
 }
